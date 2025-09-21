@@ -27,7 +27,8 @@ const App: React.FC = () => {
         const fetchRestaurants = async () => {
             setRestaurantsLoading(true);
             try {
-                const response = await fetch('./services/data.json');
+                // 將路徑改為相對於根目錄
+                const response = await fetch('/services/data.json');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
