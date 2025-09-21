@@ -1,12 +1,12 @@
 # NTU Eats | 台大吃什麼
 
-\<div align="center"\>
-\<img width="1200" height="475" alt="專案橫幅" src="[https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6](https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6)" /\>
-\</div\>
-
 一個幫助您解決「今天在台大附近要吃什麼？」煩惱的 Web 應用程式。
 
 **[➡️ 立即體驗](https://ntu-eats.pages.dev/)**
+
+## 📸 畫面預覽
+
+![alt text](images/preview.png)
 
 ## ✨ 功能特色
 
