@@ -1354,5 +1354,175 @@
                 }
             }
         ]
+    },
+    {
+        "id": 14,
+        "name": "道楽製麵所",
+        "cuisine": "日式",
+        "latitude": 25.0132988,
+        "longitude": 121.5340903,
+        "priceRange": 2,
+        "rating": 4.6,
+        "googleMapsUrl": "https://maps.google.com/?cid=11665996934595215747",
+        "openingHours": [
+            {
+                "close": {
+                    "day": 0,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1200"
+                }
+            },
+            {
+                "close": {
+                    "day": 0,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 1,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 1,
+                    "time": "1200"
+                }
+            },
+            {
+                "close": {
+                    "day": 1,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 1,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1200"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1200"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 4,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 4,
+                    "time": "1200"
+                }
+            },
+            {
+                "close": {
+                    "day": 4,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 4,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1200"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1200"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1700"
+                }
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "すき家公館",
+        "cuisine": "日式",
+        "latitude": 25.0174029,
+        "longitude": 121.5319597,
+        "priceRange": 1,
+        "rating": 4,
+        "googleMapsUrl": "https://maps.google.com/?cid=1375034850832215784",
+        "openingHours": [
+            {
+                "open": {
+                    "day": 0,
+                    "time": "0000"
+                }
+            }
+        ]
     }
 ]
