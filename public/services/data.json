@@ -2,7 +2,7 @@
 [
     {
         "id": 1,
-        "name": "貳樓餐廳 公館店",
+        "name": "Second Floor 貳樓公館店",
         "cuisine": "美式",
         "latitude": 25.0152,
         "longitude": 121.5348,
@@ -108,7 +108,7 @@
         "longitude": 121.5336,
         "priceRange": 1,
         "rating": 4.4,
-        "googleMapsUrl": "https://maps.app.goo.gl/hG5b4iJ8C2b2F9P58"
+        "googleMapsUrl": "https://maps.app.goo.gl/fJFJXWdfdffciE7YA"
     },
     {
         "id": 12,
