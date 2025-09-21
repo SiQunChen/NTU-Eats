@@ -4,7 +4,7 @@ import axios from 'axios';
 import readline from 'readline/promises';
 import fs from 'fs/promises';
 import path from 'path';
-import { fileURLToPath } from 'url'; // 【修正】引入 fileURLToPath
+import { fileURLToPath } from 'url';
 
 // 從環境變數讀取您的 API 金鑰
 const { GOOGLE_MAPS_API_KEY } = process.env;
@@ -14,7 +14,6 @@ if (!GOOGLE_MAPS_API_KEY) {
     process.exit(1);
 }
 
-// 【修正】使用更穩健的方式取得目前檔案的路徑
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const dataFilePath = path.join(__dirname, '..', 'public', 'services', 'data.json');
@@ -24,6 +23,28 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
+
+const cuisineOptions = ['台式', '日式', '韓式', '泰式', '越式', '義式', '美式', '健康餐', '其它'];
+
+// 【修正】讓函式接收 restaurantName 參數
+async function selectCuisine(restaurantName) {
+    // 【修正】使用傳入的 restaurantName 參數，而不是無法存取的 place 變數
+    console.log(`\n請為餐廳 "${restaurantName}" 選擇一個菜系分類：`);
+    cuisineOptions.forEach((option, index) => {
+        console.log(`  ${index + 1}. ${option}`);
+    });
+
+    while (true) {
+        const answer = await rl.question(`\n請輸入對應的數字 (1-${cuisineOptions.length}): `);
+        const choice = parseInt(answer, 10);
+        if (!isNaN(choice) && choice >= 1 && choice <= cuisineOptions.length) {
+            return cuisineOptions[choice - 1];
+        } else {
+            console.log(`\n❌ 輸入無效，請重新輸入一個介於 1 到 ${cuisineOptions.length} 之間的數字。`);
+        }
+    }
+}
+
 
 // 主要的函式
 async function getRestaurantDetails(placeName) {
@@ -38,7 +59,7 @@ async function getRestaurantDetails(placeName) {
         const placeId = searchResponse.data.candidates[0].place_id;
 
         // --- 取得詳細資訊 ---
-        const detailsUrl = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=name,rating,geometry,price_level,url,types&key=${GOOGLE_MAPS_API_KEY}`;
+        const detailsUrl = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=name,rating,geometry,price_level,url,types,opening_hours&key=${GOOGLE_MAPS_API_KEY}`;
         const detailsResponse = await axios.get(detailsUrl);
         if (detailsResponse.data.status !== 'OK') {
             throw new Error('無法取得地點的詳細資訊');
@@ -48,7 +69,6 @@ async function getRestaurantDetails(placeName) {
         // --- 讀取並解析現有的 data.json ---
         const dataFile = await fs.readFile(dataFilePath, 'utf8');
         
-        // 【防錯】如果檔案是空的，就初始化為一個空陣列
         const restaurants = dataFile ? JSON.parse(dataFile) : [];
 
         // --- 檢查是否重複 ---
@@ -58,66 +78,38 @@ async function getRestaurantDetails(placeName) {
             return;
         }
 
+        // 【修正】呼叫函式時，將 place.name 傳遞進去
+        const selectedCuisine = await selectCuisine(place.name);
+
         // --- 產生新的餐廳物件 ---
-        // 如果 restaurants 是空的，起始 id 為 1
         const newId = restaurants.length > 0 ? Math.max(...restaurants.map(r => r.id)) + 1 : 1;
 
         const newRestaurant = {
             id: newId,
             name: place.name,
-            cuisine: findCuisine(place.types),
+            cuisine: selectedCuisine,
             latitude: place.geometry.location.lat,
             longitude: place.geometry.location.lng,
             priceRange: place.price_level || 2,
             rating: place.rating,
-            googleMapsUrl: place.url
+            googleMapsUrl: place.url,
+            openingHours: place.opening_hours ? place.opening_hours.periods : []
         };
 
         // --- 將新餐廳加入陣列並寫回檔案 ---
         restaurants.push(newRestaurant);
         await fs.writeFile(dataFilePath, JSON.stringify(restaurants, null, 4), 'utf8');
         
-        console.log(`\n✅ 成功！餐廳 "${place.name}" 已自動新增到 public/services/data.json 中！`);
+        console.log(`\n✅ 成功！餐廳 "${place.name}" (${selectedCuisine}) 已自動新增到 public/services/data.json 中！`);
         console.log('\n----------------------------------------\n');
 
     } catch (error) {
-        // 加上對 JSON 解析錯誤的具體提示
         if (error instanceof SyntaxError) {
             console.error('\n❌ 發生錯誤：data.json 檔案格式錯誤，無法解析。請檢查檔案內容是否為有效的 JSON。');
         } else {
             console.error('\n❌ 發生錯誤：', error.message);
         }
     }
-}
-
-function findCuisine(types) {
-    // 優先檢查最精確的菜系分類
-    if (types.includes('thai_restaurant')) return '泰式';
-    if (types.includes('japanese_restaurant')) return '日式';
-    if (types.includes('italian_restaurant')) return '義式';
-    if (types.includes('american_restaurant')) return '美式';
-    if (types.includes('chinese_restaurant')) return '中式';
-    if (types.includes('vietnamese_restaurant')) return '越南料理';
-    // 您可以在這裡繼續添加更多精確的菜系，例如 'mexican_restaurant', 'indian_restaurant' 等
-
-    // 如果上面都沒有符合，再檢查通用的分類
-    const typeMap = {
-        'cafe': '咖啡廳',
-        'bakery': '麵包店',
-        'bar': '酒吧',
-        'meal_takeaway': '外帶',
-        // 將 'restaurant' 放在通用分類的後面，作為一個比較概括的選項
-        'restaurant': '複合式', 
-    };
-
-    for (const type of types) {
-        if (typeMap[type]) {
-            return typeMap[type];
-        }
-    }
-
-    // 如果所有標籤都對應不到，最後回傳'其他'
-    return '其他';
 }
 
 async function parsePlaceNameFromUrl(url) {
@@ -140,12 +132,18 @@ async function parsePlaceNameFromUrl(url) {
 }
 
 async function main() {
-    const url = await rl.question('請貼上餐廳的 Google Maps 網址 (完成後按 Ctrl+C 結束): ');
-    if (url) {
-        const placeName = await parsePlaceNameFromUrl(url);
-        await getRestaurantDetails(placeName);
+    try {
+        while (true) {
+            const url = await rl.question('請貼上餐廳的 Google Maps 網址 (完成後按 Ctrl+C 結束): ');
+            if (url) {
+                const placeName = await parsePlaceNameFromUrl(url);
+                await getRestaurantDetails(placeName);
+            }
+        }
+    } catch (error) {
+        console.log('\n程式已結束。');
+        process.exit(0);
     }
-    main(); 
 }
 
 console.log("--- NTU Eats 餐廳自動新增工具 ---");

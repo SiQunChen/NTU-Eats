@@ -3,6 +3,7 @@ import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { Restaurant, RestaurantWithDistance, Filters } from './types';
 import { useGeolocation } from './hooks/useGeolocation';
 import { calculateDistance } from './utils/distance';
+import { isRestaurantOpen } from './utils/time';
 import Header from './components/Header';
 import FilterModal from './components/FilterModal';
 import RestaurantCard from './components/RestaurantCard';
@@ -21,6 +22,7 @@ const App: React.FC = () => {
         price: 0,
         rating: 0,
         distance: 5, // Default max distance 5km
+        openNow: false,
     });
 
     useEffect(() => {
@@ -69,6 +71,9 @@ const App: React.FC = () => {
         }
         if (filters.rating > 0) {
             result = result.filter(r => r.rating >= filters.rating);
+        }
+        if (filters.openNow) {
+            result = result.filter(r => isRestaurantOpen(r));
         }
         if (location) {
              result = result.filter(r => r.distance <= filters.distance);

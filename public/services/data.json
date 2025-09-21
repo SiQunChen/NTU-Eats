@@ -2,11 +2,1357 @@
     {
         "id": 1,
         "name": "泰豐味",
-        "cuisine": "複合式",
+        "cuisine": "泰式",
         "latitude": 25.0140854,
         "longitude": 121.5342368,
         "priceRange": 1,
         "rating": 3.7,
-        "googleMapsUrl": "https://maps.google.com/?cid=4350202145425800030"
+        "googleMapsUrl": "https://maps.google.com/?cid=4350202145425800030",
+        "openingHours": [
+            {
+                "close": {
+                    "day": 0,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 0,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 1,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 1,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 1,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 1,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1700"
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "好呷拉麵 甜品吃到飽(公館)",
+        "cuisine": "日式",
+        "latitude": 25.0139872,
+        "longitude": 121.5336346,
+        "priceRange": 2,
+        "rating": 4.3,
+        "googleMapsUrl": "https://maps.google.com/?cid=3518571503251775817",
+        "openingHours": [
+            {
+                "close": {
+                    "day": 0,
+                    "time": "1420"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 0,
+                    "time": "2230"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 1,
+                    "time": "1420"
+                },
+                "open": {
+                    "day": 1,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 1,
+                    "time": "2230"
+                },
+                "open": {
+                    "day": 1,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "1420"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "2230"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "1420"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "2230"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 4,
+                    "time": "1420"
+                },
+                "open": {
+                    "day": 4,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 4,
+                    "time": "2230"
+                },
+                "open": {
+                    "day": 4,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "1420"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "2230"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "1420"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "2230"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1700"
+                }
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "丼丼GO",
+        "cuisine": "日式",
+        "latitude": 25.0143269,
+        "longitude": 121.533511,
+        "priceRange": 2,
+        "rating": 4.9,
+        "googleMapsUrl": "https://maps.google.com/?cid=2110232976981019559",
+        "openingHours": [
+            {
+                "close": {
+                    "day": 0,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 1,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 1,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 4,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 4,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1100"
+                }
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "隱家拉麵 公館店",
+        "cuisine": "日式",
+        "latitude": 25.0146655,
+        "longitude": 121.5334,
+        "priceRange": 2,
+        "rating": 4.2,
+        "googleMapsUrl": "https://maps.google.com/?cid=2399007645521899378",
+        "openingHours": [
+            {
+                "close": {
+                    "day": 0,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 0,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1630"
+                }
+            },
+            {
+                "close": {
+                    "day": 1,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 1,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 1,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 1,
+                    "time": "1630"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1630"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1630"
+                }
+            },
+            {
+                "close": {
+                    "day": 4,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 4,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 4,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 4,
+                    "time": "1630"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1630"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1630"
+                }
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "YU POKÉ-夏威夷生魚飯",
+        "cuisine": "健康餐",
+        "latitude": 25.0150018,
+        "longitude": 121.5328371,
+        "priceRange": 1,
+        "rating": 4.5,
+        "googleMapsUrl": "https://maps.google.com/?cid=10930323454133019531",
+        "openingHours": [
+            {
+                "close": {
+                    "day": 0,
+                    "time": "2030"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 1,
+                    "time": "2030"
+                },
+                "open": {
+                    "day": 1,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "2030"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "2030"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 4,
+                    "time": "2030"
+                },
+                "open": {
+                    "day": 4,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "2030"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "2030"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1130"
+                }
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "小高拉麵 公館",
+        "cuisine": "日式",
+        "latitude": 25.0150703,
+        "longitude": 121.5325773,
+        "priceRange": 2,
+        "rating": 4.6,
+        "googleMapsUrl": "https://maps.google.com/?cid=11908090603523041722",
+        "openingHours": [
+            {
+                "close": {
+                    "day": 0,
+                    "time": "1500"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 0,
+                    "time": "2330"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1600"
+                }
+            },
+            {
+                "close": {
+                    "day": 1,
+                    "time": "1500"
+                },
+                "open": {
+                    "day": 1,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 1,
+                    "time": "2330"
+                },
+                "open": {
+                    "day": 1,
+                    "time": "1600"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "1500"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "2330"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1600"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "1500"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "2330"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1600"
+                }
+            },
+            {
+                "close": {
+                    "day": 4,
+                    "time": "1500"
+                },
+                "open": {
+                    "day": 4,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 4,
+                    "time": "2330"
+                },
+                "open": {
+                    "day": 4,
+                    "time": "1600"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "1500"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "2330"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1600"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "1500"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "2330"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1600"
+                }
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "站食可以",
+        "cuisine": "台式",
+        "latitude": 25.015369,
+        "longitude": 121.5325646,
+        "priceRange": 2,
+        "rating": 4.4,
+        "googleMapsUrl": "https://maps.google.com/?cid=13529058723715556104",
+        "openingHours": [
+            {
+                "close": {
+                    "day": 0,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 1,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 1,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 4,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 4,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1130"
+                }
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "好想見麵-公館店",
+        "cuisine": "台式",
+        "latitude": 25.0156037,
+        "longitude": 121.5323493,
+        "priceRange": 2,
+        "rating": 4,
+        "googleMapsUrl": "https://maps.google.com/?cid=13913654759682148674",
+        "openingHours": [
+            {
+                "close": {
+                    "day": 0,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 1,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 1,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 4,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 4,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1100"
+                }
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "嵐迪義大利麵館",
+        "cuisine": "義式",
+        "latitude": 25.0156585,
+        "longitude": 121.5326551,
+        "priceRange": 1,
+        "rating": 4.1,
+        "googleMapsUrl": "https://maps.google.com/?cid=6981989338562805926",
+        "openingHours": [
+            {
+                "close": {
+                    "day": 0,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 4,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 4,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "2100"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1100"
+                }
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "藍家割包",
+        "cuisine": "台式",
+        "latitude": 25.0157411,
+        "longitude": 121.5325808,
+        "priceRange": 1,
+        "rating": 4,
+        "googleMapsUrl": "https://maps.google.com/?cid=10180140947890385693",
+        "openingHours": [
+            {
+                "close": {
+                    "day": 0,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 4,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 4,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "2200"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1100"
+                }
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "大盛豬排專門店（無接受訂位）",
+        "cuisine": "日式",
+        "latitude": 25.0143712,
+        "longitude": 121.5338983,
+        "priceRange": 2,
+        "rating": 4,
+        "googleMapsUrl": "https://maps.google.com/?cid=10439438299594991613",
+        "openingHours": [
+            {
+                "close": {
+                    "day": 0,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 0,
+                    "time": "2015"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "2015"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "2015"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 4,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 4,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 4,
+                    "time": "2015"
+                },
+                "open": {
+                    "day": 4,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "2015"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1700"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "1400"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1130"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "2015"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1700"
+                }
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "麥當勞-台北公館餐廳",
+        "cuisine": "美式",
+        "latitude": 25.014231,
+        "longitude": 121.5346063,
+        "priceRange": 1,
+        "rating": 3.5,
+        "googleMapsUrl": "https://maps.google.com/?cid=5767315456777373352",
+        "openingHours": [
+            {
+                "close": {
+                    "day": 1,
+                    "time": "0000"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "0600"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "0000"
+                },
+                "open": {
+                    "day": 1,
+                    "time": "0600"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "0000"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "0600"
+                }
+            },
+            {
+                "close": {
+                    "day": 4,
+                    "time": "0000"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "0600"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "0000"
+                },
+                "open": {
+                    "day": 4,
+                    "time": "0600"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "0000"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "0600"
+                }
+            },
+            {
+                "close": {
+                    "day": 0,
+                    "time": "0000"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "0600"
+                }
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "大埔鐵板燒 公館店",
+        "cuisine": "台式",
+        "latitude": 25.0121906,
+        "longitude": 121.535654,
+        "priceRange": 1,
+        "rating": 4,
+        "googleMapsUrl": "https://maps.google.com/?cid=12922384358843072493",
+        "openingHours": [
+            {
+                "close": {
+                    "day": 1,
+                    "time": "0000"
+                },
+                "open": {
+                    "day": 0,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 2,
+                    "time": "0000"
+                },
+                "open": {
+                    "day": 1,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 3,
+                    "time": "0000"
+                },
+                "open": {
+                    "day": 2,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 4,
+                    "time": "0000"
+                },
+                "open": {
+                    "day": 3,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 5,
+                    "time": "0000"
+                },
+                "open": {
+                    "day": 4,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 6,
+                    "time": "0000"
+                },
+                "open": {
+                    "day": 5,
+                    "time": "1100"
+                }
+            },
+            {
+                "close": {
+                    "day": 0,
+                    "time": "0000"
+                },
+                "open": {
+                    "day": 6,
+                    "time": "1100"
+                }
+            }
+        ]
     }
 ]

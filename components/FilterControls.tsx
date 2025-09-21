@@ -79,6 +79,19 @@ const FilterControls: React.FC<FilterControlsProps> = ({ filters, setFilters, on
                             className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-sky-500 disabled:opacity-50 disabled:cursor-not-allowed"
                         />
                         {!isLocationAvailable && <p className="text-xs text-slate-400">請開啟定位以使用距離篩選</p>}
+
+                        <div className="flex items-center pt-2">
+                            <input
+                                type="checkbox"
+                                id="open-now-filter"
+                                checked={filters.openNow}
+                                onChange={(e) => handleFilterChange('openNow', e.target.checked)}
+                                className="h-4 w-4 rounded border-slate-300 text-sky-600 focus:ring-sky-500"
+                            />
+                            <label htmlFor="open-now-filter" className="ml-2 block text-sm text-slate-600">
+                                現在營業中
+                            </label>
+                        </div>
                     </div>
                     
                     {/* Random Pick Button */}

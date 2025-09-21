@@ -1,6 +1,6 @@
-
-import React from 'react';
+import React, { useMemo } from 'react'; // <--- 引入 useMemo
 import type { RestaurantWithDistance } from '../types';
+import { isRestaurantOpen } from '../utils/time'; // <--- 引入 time.ts 的函式
 import { StarIcon, LocationIcon, MapIcon } from './Icons';
 
 interface RestaurantCardProps {
@@ -16,12 +16,19 @@ const PriceDisplay: React.FC<{ range: 1 | 2 | 3 }> = ({ range }) => (
 );
 
 const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, isLocationAvailable }) => {
+    // 使用 useMemo 避免重複計算，只有當 restaurant 物件改變時才重新計算
+    const isOpen = useMemo(() => isRestaurantOpen(restaurant), [restaurant]);
+
     return (
         <div className="bg-white rounded-xl shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col">
             <div className="p-5 flex-grow">
                 <div className="flex justify-between items-start">
                     <p className="text-xs font-semibold text-sky-500 uppercase tracking-wide">{restaurant.cuisine}</p>
                     <div className="flex items-center text-sm">
+                        {/* 新增營業狀態標示 */}
+                        <span className={`mr-2 px-2 py-0.5 rounded-full text-xs font-semibold ${isOpen ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+                            {isOpen ? '營業中' : '休息中'}
+                        </span>
                         <StarIcon className="w-4 h-4 text-amber-400 mr-1" />
                         <span className="font-bold text-slate-600">{restaurant.rating.toFixed(1)}</span>
                     </div>
