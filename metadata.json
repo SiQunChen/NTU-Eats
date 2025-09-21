@@ -1,0 +1,5 @@
+{
+  "name": "NTU Eats | 台大吃什麼",
+  "description": "A web application to help you decide what to eat near National Taiwan University. It provides filtering by price, distance, rating, and a random picker for when you're feeling indecisive.",
+  "requestFramePermissions": []
+}
